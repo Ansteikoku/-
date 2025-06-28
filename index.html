@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>掲示板</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>投稿フォーム</h1>
+        <form id="postForm">
+            <input type="text" id="userName" placeholder="名前" required>
+            <textarea id="postText" placeholder="投稿内容を入力" required></textarea>
+            <input type="file" id="imageInput" accept="image/*">
+            <input type="password" id="password" placeholder="簡易パスワード" required>
+            <button type="submit">投稿</button>
+        </form>
+
+        <h2>投稿一覧</h2>
+        <div id="postList"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.0.0/dist/supabase.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
